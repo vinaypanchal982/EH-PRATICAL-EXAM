@@ -1,0 +1,22 @@
+
+
+ 
+
+ step 1 -  Identify Target IP (On Metasploitable),Login to Metasploitable 2, ifconfig  <- command ,Look for: inet addr: 192.168.192.129 
+
+step 2 -  ping 192.168.192.129 <-command ,If you receive replies:64 bytes from 192.168.192.129 then CTRL + C ->Verify Connectivity (On Kali Linux)
+
+ step 3 - sudo nmap -sS 192.168.192.129 <- command ,SYN Scan (Stealth Scan)
+
+ step 4 -  sudo nmap -sA 192.168.192.129 <- command ,ACK Scan
+
+step 5 - sudo nmap -sF 192.168.192.129 <- command ,FIN Scan
+
+step 6 - sudo nmap -sN 192.168.192.129 <- command ,NULL Scan
+
+step 7 - sudo nmap -sX 192.168.192.129 <- command ,XMAS Scan
+
+step 8 - sudo nmap -sS -sV 192.168.192.129 <- command , Service Detection
+
+
+

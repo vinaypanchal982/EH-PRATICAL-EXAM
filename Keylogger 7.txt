@@ -1,0 +1,27 @@
+
+
+open python add this code save ass keylog.txt file wrun f5 education keyloger
+
+
+
+
+import tkinter as tk
+
+def key_pressed(event):
+    log.insert(tk.END, f"Key Pressed: {event.keysym}\n")
+    log.see(tk.END)
+
+root = tk.Tk()
+root.title("Educational Key Event Logger")
+
+label = tk.Label(root, text="Type inside this window:")
+label.pack()
+
+entry = tk.Entry(root, width=40)
+entry.pack()
+entry.bind("<Key>", key_pressed)
+
+log = tk.Text(root, height=10, width=50)
+log.pack()
+
+root.mainloop()

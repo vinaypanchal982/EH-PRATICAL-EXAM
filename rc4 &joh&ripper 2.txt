@@ -1,0 +1,26 @@
+in kali setting network adpt1 NAT 
+
+first (B) open terminal In kali command 
+ step 1 - john
+step 2 -  sudo apt install john
+ step 3 - echo -n password123 | md5sum -> we will get 482c811da5d5b4bc6d497ffa98491e38
+ step 4 - nano hash.txt -> paste the 482c811da5d5b4bc6d497ffa98491e38  after paste do -> Ctrl + O, Enter ,Ctrl + X 
+step 5 - ls /usr/share/wordlists/
+step 6 - sudo gunzip /usr/share/wordlists/rockyou.txt.gz
+step 7 - john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash.txt 
+step 8 - john --format=raw-md5 --show hash.txt -> here the final output 
+
+then (A) now open cryp Tool 1.42 eng version
+
+ step 1 - File → New
+step 2 -  password123
+ step 3 -  go to upper layer we can see  -> Encrypt/Decrypt → Symmetric → RC4 → Encrypt
+ step 4 - then 128 bts -> Encrypt
+step 5 -  repte the step -> Encrypt/Decrypt → Symmetric → RC4 → Decrypt
+step 6 - then 128 bts -> Decrypt
+step 7 - password123 -> here the final out put 
+
+
+
+
+

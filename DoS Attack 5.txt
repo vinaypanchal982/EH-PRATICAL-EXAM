@@ -1,0 +1,27 @@
+ 
+
+ step 1 - on kali , ifconfig  <- command ,Identify IP Addresses
+
+step 2 - On Metasploitable: , ifconfig  <-command ,
+
+ step 3 -Verify Connectivity , From Kali: ping 192.168.192.129 <- command ,If replies are received:64 bytes from 192.168.192.129 , Network working :CTRL + C
+
+ step 4 - Start Wireshark ,On Kali: sudo wireshark   <- command ,Select interface: eth0 , Click Start Capturing
+
+step 5 -  Generate Normal Traffic , Open new terminal in Kali: ping 192.168.192.129 <- command ,Let it run for 10–15 seconds.
+
+step 6 - Stop Capture , Go back to Wireshark  , Click Red Stop Button <- command , 
+
+step 7 - Analyze Normal Traffic , Apply filter in Wireshark: icmp <- command ,
+
+step 8 -  Generate Fast Traffic , ping -i 0.01 192.168.192.129 <- command , Let it run for 20–30 seconds.
+
+step 9 - Capture During Simulation , Start new capture in WiresharkLet high-speed ping run Stop capture , icmp <- command 
+
+step 10 -  Analyze DoS-Like Traffic , 
+
+step 12 - Observe Impact on Metasploitable , On Metasploitable: ping 192.168.192.102 <- command
+
+step 13 - Step 11: Stop Traffic On Kali:CTRL + C <- command
+
+

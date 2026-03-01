@@ -1,0 +1,15 @@
+
+
+open terminal in kali 
+
+ step 1  - whois nvidia.com
+ step 2 -  sudo apt install whois
+ step 3 - whois nvidia.com
+ step 4 - nslookup nvidia.com
+step 5 - dig nvidia.com -> here final out put 
+
+
+
+
+
+in kali setting network adpt1 NAT 
